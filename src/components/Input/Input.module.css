@@ -1,0 +1,14 @@
+.wrapper {
+  background-color: rgba(255, 255, 255, 1);
+  width: calc(100% - 24px);
+  height: 47px;
+  font-family: "Roboto";
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 0px 12px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #E8E8E8;
+  outline: none;
+}

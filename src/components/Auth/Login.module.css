@@ -1,0 +1,408 @@
+
+* {
+  margin:0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+/*! VECTORS */
+
+.purplesolid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 5;
+}
+
+.purplesolidlittle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 5;
+  display: none;
+}
+
+.robot {
+  position: absolute;
+  width: 850px;
+  right: 2%;
+  z-index: 3;
+}
+
+.particles {
+  position: absolute;
+  left: 50px;
+  top: 0px;
+  height: 100vh;
+  width: calc(100vw - 50px);
+  /* width: 100vw; */
+  z-index: 4;
+}
+
+.mobparticles {
+  display: none;
+  position: absolute;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: url(../../img/auth/noisebg.png);
+  z-index: 2;
+  /* padding: 174px 732px 174px 165px; */
+  display: flex;
+  align-items: center;
+}
+
+.context__window {
+  background-color: rgba(255, 255, 255, 1);
+  margin-left: calc(10% - 30px);
+  border-radius: 30px;
+  width: 443px;
+  height: 465px;
+  padding: 49px 57px;
+  box-shadow: 0 6px 40px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  z-index: 4343;
+}
+
+.window__title {
+  font-family: "Roboto";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  color: #2D2D2D;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.window__subtitle {
+  max-width: 428px;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #2D2D2D;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.long__input {
+  background-color: rgba(255, 255, 255, 1);
+  width: calc(100% - 24px);
+  height: 47px;
+  font-family: "Roboto";
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 0px 12px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #E8E8E8;
+  outline: none;
+
+  transition: .3s;
+}
+
+.long__input::placeholder {
+  color: #9A9A9A;
+}
+
+.long__input:focus::placeholder {
+  color: #C4C4C4;
+}
+
+.input__container {
+  position: relative;
+}
+
+.long__input__container {
+  width: 100%;
+  position: relative;
+}
+
+.short__input__container {
+  /* width: 100%; */
+  position: relative;
+}
+
+.green__checkmark {
+  position: absolute;
+  right: 13px;
+  top: 20px;
+  width: 11px;
+  height: 11px;
+  background-color: green;
+  border-radius: 66px;
+}
+
+.red__checkmark {
+  position: absolute;
+  right: 13px;
+  top: 20px;
+  width: 11px;
+  height: 11px;
+  border-radius: 66px;
+  background-color: rgba(255, 88, 88, 1);
+}
+
+.grey__checkmark {
+  position: absolute;
+  right: 13px;
+  top: 20px;
+  width: 11px;
+  height: 11px;
+  border-radius: 66px;
+  background-color: #E8E8E8;;
+}
+
+.flex {
+  margin-bottom: 21px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.short__input {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  width: 193px;
+  height: 47px;
+  font-family: "Roboto";
+  font-size: 16px;
+  padding: 0px 12px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #E8E8E8;
+}
+
+.red__checkmark {
+  width: 11px;
+  height: 11px;
+  background-color: rgba(255, 88, 88, 1);
+  border-radius: 66px;
+  margin-left: 19px;
+}
+
+.long__button {
+  background-color: #9462FF;
+  margin-bottom: 33px;
+  width: calc(100% - 32px);
+  min-height: 47px;
+  border-radius: 10px;
+  padding: 0px 16px;
+  display: flex;
+  border: #9462FF;
+  align-items: center;
+  cursor: pointer;
+}
+
+.disabled__button {
+  opacity: .6;
+}
+
+.spacebetween {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.button__text {
+  margin: 0 auto;
+  color: white;
+}
+
+.group2 {
+  margin-bottom: 33px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.rectangle7 {
+  width: 70px;
+  height: 1px;
+  background-color:#E8E8E8;
+  margin-top: 8px;
+  /* margin-right: 16px; */
+}
+
+.bootstump {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #9A9A9A;
+  text-align: center;
+  margin-top: -2px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.link {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color:#418BFA;
+  text-align: center;
+  cursor: pointer;
+}
+
+.error__text {
+  color: #FF5858;
+}
+
+.error__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 20px;
+  height: 100%;
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
+
+/*! ADAPTIVE */
+
+@media screen and (max-width: 460px) {
+  .wrapper {
+    background: white;
+  }
+
+  .context__window {
+    width: calc(100vw - 110px);
+    height: 500px;
+    padding: 55px;
+    margin: 0 auto;
+    align-items: center;
+    box-shadow: none;
+  }
+
+  .window__title {
+    font-size: 24px;
+  }
+
+  .window__subtitle {
+    font-size: 14px;
+  }
+
+  .purplesolid {
+    display: none;
+  }
+
+  .robot {
+    display: none;
+  }
+
+  .particles {
+    display: none;
+    /* width: 100vw; */
+    height: 100vh;
+  }
+
+  .mobparticles {
+    display: none;
+    top: 0;
+    left: 0px;
+    /* width: 100vw; */
+    height: 100vh;
+  }
+
+  .flex {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .input__container {
+    width: 100%;
+  }
+
+  .long__input {
+    width: calc(100% - 24px);
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .short__input {
+    position: relative;
+    width: calc(100% - 24px);
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  .long__button {
+    width: 100%;
+    min-height: auto;
+    padding: 15px 0px;
+  }
+}
+
+@media screen and (max-width: 1680px) {
+  .robot {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .robot {
+    width: 550px;
+  }
+
+  .context__window {
+    padding: 35px 40px;
+  }
+
+  .window__title {
+    font-size: 32px;
+  }
+
+  .window__subtitle {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .robot {
+    display: none;
+  }
+
+  .particles {
+    display: none;
+  }
+
+  .purplesolid {
+    display: none;
+  }
+
+  .purplesolidlittle {
+    display: block;
+  }
+
+  .context__window {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .wrapper {
+    background: #ffffff;
+  }
+
+  .purplesolidlittle {
+    display: none;
+  }
+
+  .context__window {
+    box-shadow: none;
+  }
+}

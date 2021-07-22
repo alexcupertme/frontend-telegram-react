@@ -1,0 +1,30 @@
+.wrapper {
+  width: max-content;
+  height: max-content;
+  border-radius: 50px;
+  padding: 5px 17px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+}
+
+.green {
+  background-color: #B7FFC2;
+  color: #199B0E;
+}
+
+.blue {
+  background-color: #B7E5FF;
+  color: #216C97;
+}
+
+.purple {
+  background-color: #d3b7ff;
+  color: #442197;
+}
+
+.tag__text {
+  
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+}
