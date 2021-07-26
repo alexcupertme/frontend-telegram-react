@@ -4,12 +4,12 @@ import checkmark from '../../../../img/dashboard/checkmark.svg'
 
 import s from './BotType.module.css'
 
-// type TProps = {
-//   selected: boolean,
-//   setSelected: React.Dispatch<React.SetStateAction<boolean>>
-// }
+type TProps = {
+  radioId?: string,
+  radioName?: string
+}
 
-const BotType: React.FC = (): JSX.Element => {
+const BotType: React.FC<TProps> = ({radioId, radioName}): JSX.Element => {
 
   const [typeSelected, setTypeSelected] = useState<boolean>(false)
 
@@ -25,10 +25,12 @@ const BotType: React.FC = (): JSX.Element => {
     <div 
     onClick={(e) => setSelectedHandler(e)} 
     className={`${typeSelected ? s.selected : ''} ${s.wrapper}`}>
-      <div className={s.checkbox}>
-        <div className={s.checkmark}>
+      <div className={s.radio}>
+        <input className={s.radio__input} type="radio" id={radioId} name={radioName}/> 
+        <label className={s.radio__label} htmlFor={radioId}>Лабел</label>
+        {/* <div className={s.checkmark}>
           <img src={checkmark} alt="" />
-        </div>
+        </div> */}
       </div>
       <div className={s.type__info}>
         <div className={s.type}>

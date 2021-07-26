@@ -19,9 +19,9 @@ const CreateBot: React.FC = (): JSX.Element => {
           </div>
           <Input placeholder={'Название бота'}/>
           <div className={s.types__list}>
-            <BotType />
-            <BotType />
-            <BotType />
+            <BotType radioId={"botType"} radioName={"botType"}/>
+            <BotType radioId={"botType"} radioName={"botType"}/>
+            <BotType radioId={"botType"} radioName={"botType"}/>
           </div>
         </div>
       </Modal>
